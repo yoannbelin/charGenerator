@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { AccueilComponent } from './accueil/accueil.component';
+import { DetailComponent } from './character/detail/detail.component';
+import { CharacterModule } from './character/character.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     MatSliderModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    CharacterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
