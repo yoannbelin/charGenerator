@@ -1,0 +1,10 @@
+.delete-onglet{
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: 1px;
+  background-color: red;
+  border-radius: 4px;
+  z-index: -1;
+}
