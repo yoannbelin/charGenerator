@@ -1,25 +1,6 @@
 <div class="row">
   <div class="col-6">
-    <div *ngFor="let character of characters" class="row mt-4">
-        <mat-card [@hoverNothover]="isHover ? 'hover' : 'notHover'" (mouseover)="isHover = true" (mouseout)="isHover = false" class="example-card col-12" (click)="selectedChar = character">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ character.name }}</mat-card-title>
-            <mat-card-subtitle>{{ character.race }}</mat-card-subtitle>
-            <mat-card-subtitle>{{ character.classe }}</mat-card-subtitle>
-          </mat-card-header>
-
-          <mat-card-content>
-            <p>
-              {{ character.description }}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-    </div>
+    <app-card *ngFor="let character of characters" [character]="character" (newSelectedChar)="newSelectedChar($event)" class="row mt-4"></app-card>
   </div>
   <app-detail *ngIf="selectedChar; else elseBlock" class="col-6" [selectedChar]="selectedChar"></app-detail>
   <ng-template #elseBlock>
