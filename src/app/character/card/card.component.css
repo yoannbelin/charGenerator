@@ -1,10 +1,54 @@
 .delete-onglet{
   position: absolute;
-  width: 50px;
+  width: 55px;
   height: 100%;
   top: 0;
   right: 1px;
   background-color: red;
   border-radius: 4px;
   z-index: -1;
+}
+
+.mat-card:hover {
+  animation-name: slideleft;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.mat-card:hover .delete-onglet{
+  animation-name: ongletshow;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.mat-card .delete-onglet{
+  animation-name: onglethide;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.mat-card{
+  animation-name: slideright;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideleft {
+  from {left: 0}
+  to {left: -50px}
+}
+
+@keyframes slideright {
+  from {left: -50px}
+  to {left: 0}
+}
+
+@keyframes ongletshow {
+  from {right: 0;}
+  to {right: -49px;}
+}
+
+@keyframes onglethide {
+  from {right: -49px;}
+  to {right: 0;}
 }
