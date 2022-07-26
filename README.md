@@ -1,6 +1,13 @@
 # Chargenerator
 
+Il s'agit d'un projet personnel pour pratiquer Angular.
+Le but est de pouvoir générer des personnages de jeux de rôle en choisissant ses caractéristiques, sa race, sa classe, son arme de prédilection, ses compétences, etc... Tout ça dans le but d'avoir un récapitulatif de ses personnages.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+
+## Installation des Packages
+
+Run `npm install` to install necessary node_modules.
 
 ## Development server
 
