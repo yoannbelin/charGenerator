@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { DetailComponent } from './detail/detail.component';
 import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -13,7 +15,9 @@ import { MatCardModule } from '@angular/material/card';
   ],
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [
     DetailComponent,

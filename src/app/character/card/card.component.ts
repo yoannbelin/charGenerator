@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter, ElementRef, AfterViewInit } from '@angular/core';
 import { animate, style, transition, trigger, state, query, animateChild } from '@angular/animations';
 import { Character } from 'src/app/character';
 
@@ -31,13 +31,14 @@ import { Character } from 'src/app/character';
 })
 export class CardComponent implements OnInit {
 
-  isHover = false;
+  isDeleted:boolean = false;
 
   @Output() newSelectedChar = new EventEmitter<Character>();
 
   @Input() character!: Character;
 
-  constructor() { }
+  constructor(private elementRef:ElementRef) {
+  }
 
   ngOnInit(): void {
   }
@@ -45,5 +46,4 @@ export class CardComponent implements OnInit {
   changeSelectedChar(value: Character){
     this.newSelectedChar.emit(value);
   }
-
 }

@@ -1,5 +1,5 @@
-<div class="card-box col-12 text-end">
-  <mat-card class="example-card d-inline-block text-start" (click)="changeSelectedChar(character)">
+<div class="card-box col-12 text-end position-relative">
+  <mat-card (click)="changeSelectedChar(character);$event.stopPropagation()" class="example-card d-inline-block text-start" >
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{ character.name }}</mat-card-title>
@@ -12,10 +12,10 @@
         {{ character.description }}
       </p>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-    <div class="delete-onglet"></div>
+
   </mat-card>
+  <button (click)="isDeleted = true; $event.stopPropagation()" class="delete-onglet btn-del-update">
+    {{ isDeleted }}
+    <mat-icon>delete_forever</mat-icon>
+  </button>
 </div>

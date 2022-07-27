@@ -1,12 +1,18 @@
 .delete-onglet{
   position: absolute;
   width: 55px;
-  height: 100%;
+  height: 50%;
   top: 0;
-  right: 1px;
-  background-color: red;
-  border-radius: 4px;
-  z-index: -1;
+  right: 12px;
+  background-color: #f44336;
+  border-radius: 0px 40px 40px 0px;
+  border: none;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.card-box{
+  cursor: pointer;
 }
 
 .card-box:hover .mat-card{
@@ -15,20 +21,10 @@
   animation-fill-mode: forwards;
 }
 
-.card-box:hover .delete-onglet{
-  animation-name: ongletshow;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-
 .mat-card{
   width: calc(100% - 50px);
-}
-
-.card-box .delete-onglet{
-  animation-name: onglethide;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
+  border-radius: 4px 0px 4px 40px;
+  z-index: 1;
 }
 
 .card-box .mat-card{
@@ -47,12 +43,7 @@
   to {left: 0}
 }
 
-@keyframes ongletshow {
-  from {right: 0;}
-  to {right: -49px;}
-}
-
-@keyframes onglethide {
-  from {right: -49px;}
-  to {right: 0;}
+.btn-del-update{
+  width: 55px;
+  box-shadow: inset 8px 0px 5px -2px black;
 }
