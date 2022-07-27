@@ -9,25 +9,29 @@
   z-index: -1;
 }
 
-.mat-card:hover {
+.card-box:hover .mat-card{
   animation-name: slideleft;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
 
-.mat-card:hover .delete-onglet{
+.card-box:hover .delete-onglet{
   animation-name: ongletshow;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
 
-.mat-card .delete-onglet{
+.mat-card{
+  width: calc(100% - 50px);
+}
+
+.card-box .delete-onglet{
   animation-name: onglethide;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
 
-.mat-card{
+.card-box .mat-card{
   animation-name: slideright;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
