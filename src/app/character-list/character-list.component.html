@@ -2,14 +2,14 @@
   <div class="col-6">
     <app-card *ngFor="let character of characters" [character]="character" (newSelectedChar)="newSelectedChar($event)" class="row mt-4"></app-card>
   </div>
-  <app-detail *ngIf="selectedChar; else elseBlock" class="col-6" [selectedChar]="selectedChar"></app-detail>
-  <ng-template #elseBlock>
-    <div class="col-6 detail-char">
-      <div class="rox mt-4">
-        <div class="col-12 text-center">
-          <span>Veuillez sélectionner un personnage pour voir son détail</span>
+  <div class="col-6 detail-char">
+    <app-detail *ngIf="selectedChar; else elseBlock" class="row mt-4" [selectedChar]="selectedChar"></app-detail>
+    <ng-template #elseBlock>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <span>Veuillez sélectionner un personnage pour voir son détail</span>
+          </div>
         </div>
-      </div>
-    </div>
-  </ng-template>
+    </ng-template>
+  </div>
 </div>
