@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
 
   isDeleted:boolean = false;
 
+  @Output() newDeletedChar = new EventEmitter<Character>();
+
   @Output() newSelectedChar = new EventEmitter<Character>();
 
   @Input() character!: Character;
@@ -23,5 +25,9 @@ export class CardComponent implements OnInit {
 
   changeSelectedChar(value: Character){
     this.newSelectedChar.emit(value);
+  }
+
+  deleteChar(char: Character){
+    this.newDeletedChar.emit(char);
   }
 }

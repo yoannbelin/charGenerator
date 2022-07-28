@@ -14,4 +14,9 @@ export class CharacterService {
     const characters = of(CHARACTERS);
     return characters;
   }
+
+  deleteCharacter(char: Character){
+    const i = CHARACTERS.indexOf(char);
+    CHARACTERS.splice(i, 1);
+  }
 }

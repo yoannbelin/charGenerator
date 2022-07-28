@@ -8,3 +8,7 @@ mat-icon{
 mat-toolbar-row a{
   color: #FFF;
 }
+
+.accent{
+  color: #69F0AE;
+}
