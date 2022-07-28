@@ -1,3 +1,9 @@
 .border-accent{
   border: 2px solid #69F0AE;
 }
+
+.bg-accent{
+  background-color: #69F0AE;
+  color: #424242;
+  border-radius: 10px;
+}

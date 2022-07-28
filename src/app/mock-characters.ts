@@ -124,8 +124,8 @@ export const CHARACTERS: Character[] = [
         icone: "charge.jpg"
       }
     },
-    force: 6,
-    intelligence: 8,
+    force: 4,
+    intelligence: 10,
     agilite: 6,
     constitution: 8,
     pvRestants: 80

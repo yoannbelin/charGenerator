@@ -7,7 +7,7 @@ import { Character } from 'src/app/character';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit {
+export class CardComponent implements OnInit { 
 
   isDeleted:boolean = false;
 

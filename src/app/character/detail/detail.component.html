@@ -6,7 +6,42 @@
       <mat-card-subtitle>{{ selectedChar.race.name }}</mat-card-subtitle>
       <mat-card-subtitle>{{ selectedChar.classe.name }}</mat-card-subtitle>
     </mat-card-header>
-
+    <mat-card-content>
+      <div class="row">
+        <div class="col-2 text-center">
+          <span class="d-block">FOR</span>
+          <mat-icon>fitness_center</mat-icon>
+        </div>
+        <div class="col-2 text-center">
+          <span class="d-block">AGI</span>
+          <mat-icon> directions_run</mat-icon>
+        </div>
+        <div class="col-2 text-center">
+          <span class="d-block">INT</span>
+          <mat-icon>school</mat-icon>
+        </div>
+        <div class="col-2 text-center">
+          <span class="d-block">CON</span>
+          <mat-icon>healing</mat-icon>
+        </div>
+        <div class="col-2 text-center">
+          <span class="d-block">ARM</span>
+          <mat-icon>security</mat-icon>
+        </div>
+        <div class="col-2 text-center">
+          <span class="d-block">ESQ</span>
+          <mat-icon>reply_all</mat-icon>
+        </div>
+      </div>
+      <div class="row bg-accent">
+        <div class="col-2 text-center">{{ selectedChar.force }}</div>
+        <div class="col-2 text-center">{{ selectedChar.agilite }}</div>
+        <div class="col-2 text-center">{{ selectedChar.intelligence }}</div>
+        <div class="col-2 text-center">{{ selectedChar.constitution }}</div>
+        <div class="col-2 text-center">{{ selectedChar.force + 10 }}</div>
+        <div class="col-2 text-center">{{ selectedChar.agilite + 10 }}</div>
+      </div>
+    </mat-card-content>
     <mat-card-content>
       <p>
         {{ selectedChar.description }}
