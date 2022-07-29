@@ -7,7 +7,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 1,
       name: "mage",
-      icone: "test.jpg",
+      icone: "mage.png",
       competences: [
         {
           id: 1,
@@ -50,7 +50,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 2,
       name: "guerrier",
-      icone: "test-guerrier.jpg",
+      icone: "guerrier.png",
       competences: [
         {
           id: 4,
@@ -93,7 +93,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 1,
       name: "mage",
-      icone: "test.jpg",
+      icone: "mage.png",
       competences: [
         {
           id: 1,
@@ -136,7 +136,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 1,
       name: "mage",
-      icone: "test.jpg",
+      icone: "mage.png",
       competences: [
         {
           id: 1,
@@ -179,7 +179,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 1,
       name: "mage",
-      icone: "test.jpg",
+      icone: "mage.png",
       competences: [
         {
           id: 1,
@@ -222,7 +222,7 @@ export const CHARACTERS: Character[] = [
     classe: {
       id: 1,
       name: "mage",
-      icone: "test.jpg",
+      icone: "mage.png",
       competences: [
         {
           id: 1,
