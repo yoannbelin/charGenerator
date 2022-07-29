@@ -8,10 +8,9 @@
   border-radius: 10px;
 }
 
-:host{
+mat-card.sticky{
   position: fixed;
   width: 37%;
   right: 7%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 120px;
 }
