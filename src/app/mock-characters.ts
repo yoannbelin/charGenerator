@@ -129,5 +129,134 @@ export const CHARACTERS: Character[] = [
     agilite: 6,
     constitution: 8,
     pvRestants: 80
+  },
+  {
+    id: 4,
+    name: "poupi",
+    classe: {
+      id: 1,
+      name: "mage",
+      icone: "test.jpg",
+      competences: [
+        {
+          id: 1,
+          name: "boule de feu",
+          description: "lance une boule de feu",
+          icone: "test-bdf.jpg"
+        },
+        {
+          id: 2,
+          name: "téléportation",
+          description: "se téléporte quelques mètres plus loin",
+          icone: "test-tp.jpg"
+        }
+      ]
+    },
+    description: "premier troisième test",
+    sexe: "masculin",
+    race: {
+      id: 1,
+      name: "orc",
+      bonusValue: 2,
+      bonusCarac: "force",
+      icone: "orc.jpg",
+      competence: {
+        id: 3,
+        name: "charge",
+        description: "charge vers l'avant",
+        icone: "charge.jpg"
+      }
+    },
+    force: 4,
+    intelligence: 10,
+    agilite: 6,
+    constitution: 8,
+    pvRestants: 80
+  },
+  {
+    id: 5,
+    name: "theodule",
+    classe: {
+      id: 1,
+      name: "mage",
+      icone: "test.jpg",
+      competences: [
+        {
+          id: 1,
+          name: "boule de feu",
+          description: "lance une boule de feu",
+          icone: "test-bdf.jpg"
+        },
+        {
+          id: 2,
+          name: "téléportation",
+          description: "se téléporte quelques mètres plus loin",
+          icone: "test-tp.jpg"
+        }
+      ]
+    },
+    description: "premier troisième test",
+    sexe: "masculin",
+    race: {
+      id: 1,
+      name: "orc",
+      bonusValue: 2,
+      bonusCarac: "force",
+      icone: "orc.jpg",
+      competence: {
+        id: 3,
+        name: "charge",
+        description: "charge vers l'avant",
+        icone: "charge.jpg"
+      }
+    },
+    force: 4,
+    intelligence: 10,
+    agilite: 6,
+    constitution: 8,
+    pvRestants: 80
+  },
+  {
+    id: 6,
+    name: "vivion",
+    classe: {
+      id: 1,
+      name: "mage",
+      icone: "test.jpg",
+      competences: [
+        {
+          id: 1,
+          name: "boule de feu",
+          description: "lance une boule de feu",
+          icone: "test-bdf.jpg"
+        },
+        {
+          id: 2,
+          name: "téléportation",
+          description: "se téléporte quelques mètres plus loin",
+          icone: "test-tp.jpg"
+        }
+      ]
+    },
+    description: "premier troisième test",
+    sexe: "masculin",
+    race: {
+      id: 1,
+      name: "orc",
+      bonusValue: 2,
+      bonusCarac: "force",
+      icone: "orc.jpg",
+      competence: {
+        id: 3,
+        name: "charge",
+        description: "charge vers l'avant",
+        icone: "charge.jpg"
+      }
+    },
+    force: 4,
+    intelligence: 10,
+    agilite: 6,
+    constitution: 8,
+    pvRestants: 80
   }
 ]
