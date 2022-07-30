@@ -12,12 +12,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { AccueilComponent } from './accueil/accueil.component';
 import { DetailComponent } from './character/detail/detail.component';
 import { CharacterModule } from './character/character.module';
+import { AddCharacterComponent } from './add-character/add-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharacterListComponent,
-    AccueilComponent
+    AccueilComponent,
+    AddCharacterComponent
   ],
   imports: [
     BrowserModule,
