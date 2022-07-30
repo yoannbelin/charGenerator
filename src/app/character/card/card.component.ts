@@ -1,13 +1,13 @@
 import { Component, OnInit, Output, Input, EventEmitter, ElementRef, AfterViewInit } from '@angular/core';
 import { animate, style, transition, trigger, state, query, animateChild } from '@angular/animations';
-import { Character } from 'src/app/character';
+import { Character } from 'src/app/models/character';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit { 
+export class CardComponent implements OnInit {
 
   isDeleted:boolean = false;
 

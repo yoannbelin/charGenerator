@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from '../character';
-import { CharacterService } from '../character.service';
+import { Character } from '../models/character';
+import { CharacterService } from '../services/character.service';
 import { animate, style, transition, trigger, state, query, animateChild } from '@angular/animations';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Character } from './character';
+import { Character } from './models/character';
 import { ChildrenOutletContexts } from '@angular/router';
 import { slideInAnimation } from './animation';
 

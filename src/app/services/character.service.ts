@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Character } from './character';
-import { CHARACTERS } from './mock-characters';
+import { Character } from '../models/character';
+import { CHARACTERS } from '../mocks/mock-characters';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
